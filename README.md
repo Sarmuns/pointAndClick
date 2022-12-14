@@ -21,7 +21,7 @@ Execute com npm ou yarn dev
     
 ## Melhorias
 - Refatorar o css para passar props pelo css
-- Refatorar o código para que cada circulo individualmente tenha uma cor aleatoria
+- ~~Refatorar o código para que cada circulo individualmente tenha uma cor aleatoria~~ :white_check_mark:
 
 ## Link de acesso
 O deploy da aplicação foi feito de forma gratuíta pela plataforma netlify <br />
