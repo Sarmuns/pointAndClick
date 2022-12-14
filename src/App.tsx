@@ -59,8 +59,8 @@ function App() {
           return <div
             key={index}
             style={{
-              left: circle.clientX - 5,
-              top: circle.clientY - 5,
+              left: circle.clientX - 8,
+              top: circle.clientY - 7,
               position: 'absolute',
               borderRadius: '50%',
               backgroundColor: colors[circle.controlColor],
