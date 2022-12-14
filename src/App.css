@@ -1,0 +1,26 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+button {
+  padding: 10px 15px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #aa04aa;
+  border: none;
+  border-radius: 15px;
+}
+
+button:hover {background-color: #7c027c}
+button:active {
+  background-color: #500050;
+  transform: translateY(1px);
+}
