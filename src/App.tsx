@@ -8,7 +8,7 @@ interface CircleProps {
 }
 
 function App() {
-  const colors = ['red', 'yellow', 'blue', 'blueviolet','AliceBlue','Aqua','BlanchedAlmond','Chartreuse','Crimson','GoldenRod','Gold','HotPink','Indigo','Ivory','Lime','LimeGreen'];
+  const colors = ['red', 'yellow', 'blue', 'blueviolet', 'AliceBlue', 'Aqua', 'BlanchedAlmond', 'Chartreuse', 'Crimson', 'GoldenRod', 'Gold', 'HotPink', 'Indigo', 'Ivory', 'Lime', 'LimeGreen'];
   const [circles, setCircles] = useState<CircleProps[]>([]);
   const [removedCircles, setRemovedCircles] = useState<CircleProps[]>([]);
 
@@ -41,19 +41,20 @@ function App() {
 
   return (
     <>
-
-      <button
-        disabled={circles.length === 0}
-        onClick={handleUndo}
-      >
-        Undo</button>
-      <button
-        disabled={removedCircles.length === 0}
-        onClick={handleRedo}
-      >
-        Redo</button>
-
+      <div className='buttonDiv'>
+        <button
+          disabled={circles.length === 0}
+          onClick={handleUndo}
+        >
+          Undo</button>
+        <button
+          disabled={removedCircles.length === 0}
+          onClick={handleRedo}
+        >
+          Redo</button>
+      </div>
       <div className="App" onClick={getCoordinates}>
+
         {circles.map((circle, index) => {
 
           return <div
@@ -61,9 +62,9 @@ function App() {
             style={{
               left: circle.clientX - 8,
               top: circle.clientY - 7,
-              position: 'absolute',
               borderRadius: '50%',
               backgroundColor: colors[circle.controlColor],
+              position: 'absolute',
               width: '15px',
               height: '15px'
 
