@@ -4,18 +4,20 @@ import './App.css'
 interface CircleProps {
   clientX: number
   clientY: number
+  controlColor: number
 }
 
-const colors = ['red', 'yellow', 'blue', 'blueviolet'];
-const controlColor = Math.floor(Math.random() * colors.length);
 function App() {
+  const colors = ['red', 'yellow', 'blue', 'blueviolet','AliceBlue','Aqua','BlanchedAlmond','Chartreuse','Crimson','GoldenRod','Gold','HotPink','Indigo','Ivory','Lime','LimeGreen'];
   const [circles, setCircles] = useState<CircleProps[]>([]);
   const [removedCircles, setRemovedCircles] = useState<CircleProps[]>([]);
 
 
   const getCoordinates = (e: any) => {
     const { clientX, clientY } = e;
-    setCircles([...circles, { clientX, clientY }])
+    const controlColor = Math.floor(Math.random() * colors.length);
+    setCircles([...circles, { clientX, clientY, controlColor }])
+    setRemovedCircles([]);
 
   }
 
@@ -43,11 +45,13 @@ function App() {
       <button
         disabled={circles.length === 0}
         onClick={handleUndo}
-      >Undo</button>
+      >
+        Undo</button>
       <button
         disabled={removedCircles.length === 0}
         onClick={handleRedo}
-      >Redo</button>
+      >
+        Redo</button>
 
       <div className="App" onClick={getCoordinates}>
         {circles.map((circle, index) => {
@@ -59,7 +63,7 @@ function App() {
               top: circle.clientY - 5,
               position: 'absolute',
               borderRadius: '50%',
-              backgroundColor: colors[controlColor],
+              backgroundColor: colors[circle.controlColor],
               width: '15px',
               height: '15px'
 
