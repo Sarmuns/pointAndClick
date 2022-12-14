@@ -8,9 +8,10 @@
 **Front-end:** ReactJS, Typescript, Vite
 
 
-## Instalação
+## Instalação e execução
 
-Instale meu projeto com npm ou yarn
+Instale meu projeto com npm ou yarn install <br />
+Execute com npm ou yarn dev
 
 ```bash
   npm install
@@ -21,3 +22,7 @@ Instale meu projeto com npm ou yarn
 ## Melhorias
 - Refatorar o css para passar props pelo css
 - Refatorar o código para que cada circulo individualmente tenha uma cor aleatoria
+
+## Link de acesso
+O deploy da aplicação foi feito de forma gratuíta pela plataforma netlify <br />
+[Abra aqui](https://poetic-axolotl-413248.netlify.app/)
