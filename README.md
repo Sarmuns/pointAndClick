@@ -11,7 +11,7 @@
 ## Instalação e execução
 
 Instale meu projeto com npm ou yarn install <br />
-Execute com npm ou yart dev
+Execute com npm ou yarn dev
 
 ```bash
   npm install
