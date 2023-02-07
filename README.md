@@ -20,7 +20,6 @@ Execute com npm ou yarn dev
 
     
 ## Melhorias
-- Refatorar o css para passar props pelo css
 - ~~Refatorar o código para que cada circulo individualmente tenha uma cor aleatoria~~ :white_check_mark:
 - ~~Permitir que esferas sejam criadas na mesma linha que os botões, mas não por cima dos mesmos~~ :white_check_mark:
 
