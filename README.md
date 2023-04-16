@@ -1,4 +1,4 @@
-# Desafio frontend reactJS
+# Desafio frontend reactJS [![Netlify Status](https://api.netlify.com/api/v1/badges/11fc2b78-7955-45d3-b7d6-583dd4a789fc/deploy-status)](https://app.netlify.com/sites/keen-syrniki-dd0da5/deploys)
 
 - "Construa uma aplicação Web usando react que a cada clique na tela seja inserido um circulo na posição exata do clique.
 - "Construa também um botão de desfazer, que ira sumir com o circulo adicionado e um botão refazer que vai adiciona-lo novamente na tela"
